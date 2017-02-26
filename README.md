@@ -20,7 +20,7 @@ Android 2.2+
 
 在app的gradle中添加
  ```
- compile 'com.github.MrxMo:MShare:v1.0.1'
+ compile 'com.github.MrxMo:MShare:v1.0'
  ```
  <br/>
 
