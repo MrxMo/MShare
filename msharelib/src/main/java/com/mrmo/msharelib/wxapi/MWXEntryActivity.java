@@ -10,7 +10,6 @@ package com.mrmo.msharelib.wxapi;
 
 import android.content.Intent;
 import android.widget.Toast;
-
 import cn.sharesdk.wechat.utils.WXAppExtendObject;
 import cn.sharesdk.wechat.utils.WXMediaMessage;
 import cn.sharesdk.wechat.utils.WechatHandlerActivity;
@@ -26,8 +25,10 @@ public class MWXEntryActivity extends WechatHandlerActivity {
 	 * 做点其他的事情，包括根本不打开任何页面
 	 */
 	public void onGetMessageFromWXReq(WXMediaMessage msg) {
-		Intent iLaunchMyself = getPackageManager().getLaunchIntentForPackage(getPackageName());
-		startActivity(iLaunchMyself);
+		if (msg != null) {
+			Intent iLaunchMyself = getPackageManager().getLaunchIntentForPackage(getPackageName());
+			startActivity(iLaunchMyself);
+		}
 	}
 
 	/**
