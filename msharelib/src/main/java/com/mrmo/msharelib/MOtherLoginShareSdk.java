@@ -4,6 +4,7 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import java.util.HashMap;
 
@@ -157,6 +158,7 @@ public class MOtherLoginShareSdk extends LinearLayout {
         platform.setPlatformActionListener(platformActionListener);
 //        platform.authorize();
         platform.showUser(null);
+
     }
 
 }
